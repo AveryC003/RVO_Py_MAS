@@ -10,11 +10,11 @@ from vis import visualize_traj_dynamic
 ws_model = dict()
 #robot radius
 ws_model['robot_radius'] = 0.2
-#circular obstacles, format [x,y,rad]
+#circular obstacles, format [x,y,radius]
 # no obstacles
 ws_model['circular_obstacles'] = []
 # with obstacles
-ws_model['circular_obstacles'] = [[-0.3, 2.5, 0.3], [1.5, 2.5, 0.3], [3.3, 2.5, 0.3], [5.1, 2.5, 0.3]]
+ws_model['circular_obstacles'] = [[-0.3, 2.5, 0.3], [1.5, 2.5, 0.3], [3.3, 2.5, 0.3], [5.1, 2.5, 0.3]] 
 #rectangular boundary, format [x,y,width/2,heigth/2]
 ws_model['boundary'] = [] 
 

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ffmpeg -r 3 -f image2 -i snap%d.png -s 1000x1000 -y simulation.avi
+ffmpeg -framerate 24 -i snap%d.0.png -c:v libx264 -qscale:v 5 simulations.avi

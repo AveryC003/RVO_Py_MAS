@@ -1,7 +1,7 @@
 import sys
 
 
-from RVO import RVO_update, reach, compute_V_des, reach
+from RVO import RVO_update, compute_V_des
 from vis import visualize_traj_dynamic
 
 
@@ -51,7 +51,8 @@ while t*step < total_time:
     #----------------------------------------
     # visualization
     if t%10 == 0:
-        visualize_traj_dynamic(ws_model, X, V, goal, time=t*step, name='data/snap%s.png'%str(t/10))
+        pass
+        # visualize_traj_dynamic(ws_model, X, V, goal, time=t*step, name='data/snap%s.png'%str(t/10)) # use this
         #visualize_traj_dynamic(ws_model, X, V, goal, time=t*step, name='data/snap%s.png'%str(t/10))
     t += 1
     
